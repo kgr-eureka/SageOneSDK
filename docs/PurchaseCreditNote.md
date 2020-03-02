@@ -1,0 +1,56 @@
+# PurchaseCreditNote
+
+Releases a Purchase Credit Note  ### Endpoint Availability  * Accounting: 🇨🇦, 🇩🇪, 🇫🇷, 🇮🇪, 🇬🇧, 🇺🇸  ### Access Control Restrictions  Requires the authenticated user to have any of the following roles in the area `Purchases`: Full Access, Restricted Access
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**legacy_id** | **int** | The legacy ID for the item | [optional] 
+**id** | **str** | The unique identifier for the item | [optional] 
+**displayed_as** | **str** | The name of the resource | [optional] 
+**path** | **str** | The API path for the resource | [optional] 
+**created_at** | **datetime** | The datetime when the item was created | [optional] 
+**updated_at** | **datetime** | The datetime when the item was last updated | [optional] 
+**links** | [**list[Link]**](Link.md) | Links for the resource | [optional] 
+**editable** | **bool** | Indicates whether artefact can be edited | [optional] 
+**postponed_accounting** | **bool** | Indicates whether postponed accounting rules are applied to the artefact. Only used for UK and IE accounting businesses, where the supplier is flagged as importer | [optional] 
+**transaction** | [**Transaction**](Transaction.md) |  | [optional] 
+**transaction_type** | [**Base**](Base.md) |  | [optional] 
+**_import** | **bool** | Indicates whether import rules are applied to the artefact. Only used for UK and IE accounting businesses, where the supplier is flagged as importer. | [optional] 
+**deleted_at** | **datetime** | The datetime when the item was deleted | [optional] 
+**contact** | [**Contact**](Contact.md) |  | [optional] 
+**contact_name** | **str** | The name of the contact when the credit note was created | [optional] 
+**contact_reference** | **str** | The reference of the contact when the credit note was created | [optional] 
+**date** | **date** | The date of the credit note | [optional] 
+**reference** | **str** | The reference for the credit note | [optional] 
+**vendor_reference** | **str** | The vendor reference for the credit note | [optional] 
+**notes** | **str** | credit note notes | [optional] 
+**total_quantity** | **float** | The total quantity of the credit note | [optional] 
+**net_amount** | **float** | The net amount of the credit note | [optional] 
+**tax_amount** | **float** | The tax amount of the credit note | [optional] 
+**total_amount** | **float** | The total amount of the credit note | [optional] 
+**payments_allocations_total_amount** | **float** | The total amount of all payments and allocations | [optional] 
+**payments_allocations_total_discount** | **float** | The total discount of all payments and allocations | [optional] 
+**total_paid** | **float** | The total paid amount of the credit note including any payments, allocations and discounts | [optional] 
+**outstanding_amount** | **float** | The outstanding amount of the credit note | [optional] 
+**currency** | [**Base**](Base.md) |  | [optional] 
+**exchange_rate** | **float** | The exchange rate for the credit note | [optional] 
+**inverse_exchange_rate** | **str** | The inverse exchange rate for the credit note | [optional] 
+**base_currency_net_amount** | **float** | The net amount of the credit note in base currency | [optional] 
+**base_currency_tax_amount** | **float** | The tax amount of the credit note in base currency | [optional] 
+**base_currency_total_amount** | **float** | The total amount of the credit note in base currency | [optional] 
+**base_currency_outstanding_amount** | **float** | The outstanding amount of the credit note in base currency | [optional] 
+**status** | [**Base**](Base.md) |  | [optional] 
+**void_reason** | **str** | The reason the credit note was voided | [optional] 
+**credit_note_lines** | [**list[PurchaseCreditNoteLineItem]**](PurchaseCreditNoteLineItem.md) | The credit note lines of the credit note | [optional] 
+**tax_analysis** | [**list[ArtefactTaxAnalysis]**](ArtefactTaxAnalysis.md) | The credit note tax analysis | [optional] 
+**detailed_tax_analysis** | [**ArtefactDetailedTaxAnalysis**](ArtefactDetailedTaxAnalysis.md) |  | [optional] 
+**payments_allocations** | [**list[PaymentAllocation]**](PaymentAllocation.md) | The associated payments and allocations | [optional] 
+**last_paid** | **date** | The date of the last payment | [optional] 
+**tax_address_region** | [**Base**](Base.md) |  | [optional] 
+**tax_reconciled** | **bool** | Indicates if the purchase credit note is tax reconciled or not. | [optional] 
+**migrated** | **bool** | Indicates if the purchase credit note was migrated from another system. | [optional] 
+**tax_calculation_method** | **str** | The tax calculation method, if applicable, for this purchase credit note, returns invoice or cash. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
